@@ -8,7 +8,8 @@ class CreateForm extends React.Component {
         this.state = {
             recipeName: '',
             indegredients: '',
-            instructions: ''
+            instructions: '',
+            createdRecipe: false
         }
         this.inputHandleChange = this.inputHandleChange.bind(this);
         this.onHandleSubmit = this.onHandleSubmit.bind(this);
@@ -23,6 +24,7 @@ class CreateForm extends React.Component {
             [name]: value 
         });
     }
+
     onHandleSubmit(event) {
         event.preventDefault();
         const {
@@ -32,17 +34,32 @@ class CreateForm extends React.Component {
         } = this.state;
 
         this.props.onSubmit(recipeName, indegredients, instructions);
+        this.resetForm();
+        this.setState({
+            createdRecipe : true
+        });
+        this.refs.recipeName.focus();
+    }
+
+    resetForm() {
+        this.setState ({
+            recipeName: '',
+            indegredients: '',
+            instructions: ''
+        });
     }
 
     render() {
         const {
             recipeName,
             indegredients,
-            instructions
+            instructions,
+            createdRecipe
         } = this.state;
         return(
             <div className="col-sm-8">
                 <form onSubmit={this.onHandleSubmit}>
+                    {createdRecipe && <div className="p-3 mb-3 bg-success text-white">Your Recipe was Created.</div>}
                     <div className="form-group">
                         <label htmlFor="recipeName">Recipe Name:</label>
                         <input 
@@ -52,6 +69,7 @@ class CreateForm extends React.Component {
                             name="recipeName"
                             placeholder="Enter Recipe name here"
                             value={recipeName}
+                            ref="recipeName"
                             onChange={this.inputHandleChange}
                         />
                     </div>
