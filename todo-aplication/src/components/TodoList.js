@@ -1,33 +1,10 @@
 import React from 'react';
-import TodoItem from './TodoItem';
 
-function TodoList() {
-    const items = [
-        {
-            name: 'First Item',
-            done: false
-        }, 
-        {
-            name:'Second Item',
-            done: true
-        }, 
-        {
-            name: 'Third Item',
-            done: false
-        }
-    ]
+function TodoList(props) {
+    
     return (
-        <ul>
-            { items.map(
-                item => <TodoItem  
-                    key={item.name} 
-                    name={item.name} 
-                    done={item.done} 
-                />) 
-            }
-        </ul>
+        <ul>{props.children}</ul>
     );
 }
 
 export default TodoList;
-
