@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../../components/Button';
 import RecipeList from '../../components/RecipeList';
+import SearchBox from '../../components/SearchBox';
 
 function RecipeSideBar(props) {
     return(
@@ -11,6 +12,7 @@ function RecipeSideBar(props) {
                     onButtonClick={props.onHandleCreate}
                 />
             </div>
+            <SearchBox onChange={props.handleSearchChange}/>
             <div>
                 <ul className="list-group">
                     {props.recipes.map(
