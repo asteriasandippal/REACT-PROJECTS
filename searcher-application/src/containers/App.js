@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
-import '../App.css';
-
-import Recipe from './Recipe';
 import Header from '../components/Header';
+import Search from './Searcher/Search';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-
+        <Header/>
         <div className="container">
-            <Header />
-            <Recipe/>
+          <Search/>
         </div>
       </div>
     );
