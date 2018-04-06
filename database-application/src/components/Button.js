@@ -2,7 +2,7 @@ import React from 'react';
 
 function Button(props) {
     const buttonClass = props.className ? props.className : `primary`;
-    const buttonStyled = props.buttonStyle ? props.buttonStyle : `block`;
+    const buttonStyled = props.buttonstyle ? props.buttonstyle : `block`;
     return(
         <button 
             type="button" 

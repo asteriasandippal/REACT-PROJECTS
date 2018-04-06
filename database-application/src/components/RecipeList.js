@@ -7,7 +7,7 @@ function RecipeList(props) {
     }
     return(
         <a 
-            href="#" 
+            href="#/" 
             className={props.className} 
             onClick={pageStopped}>
                 {props.children}

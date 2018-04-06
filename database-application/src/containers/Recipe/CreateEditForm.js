@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class CreateForm extends React.Component {
+import Button from '../../components/Button';
+
+class CreateEditForm extends React.Component {
     constructor(props) {
         super(props);
 
@@ -13,6 +15,22 @@ class CreateForm extends React.Component {
         }
         this.inputHandleChange = this.inputHandleChange.bind(this);
         this.onHandleSubmit = this.onHandleSubmit.bind(this);
+        this.setStateFormRecipe = this.setStateFormRecipe.bind(this);
+    }
+    componentDidMount() {
+        this.setStateFormRecipe(this.props.recipe);
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setStateFormRecipe(nextProps.recipe);
+    }
+
+    setStateFormRecipe(recipe) {
+        this.setState ({
+            recipeName: recipe ? recipe.recipeName : '',
+            indegredients: recipe ? recipe.indegredients : '',
+            instructions: recipe ? recipe.instructions : ''
+        });
     }
 
     inputHandleChange(event) {
@@ -33,12 +51,16 @@ class CreateForm extends React.Component {
             instructions
         } = this.state;
 
-        this.props.onSubmit(recipeName, indegredients, instructions);
-        this.resetForm();
-        this.setState({
-            createdRecipe : true
-        });
-        this.refs.recipeName.focus();
+        if (this.props.recipe) {
+            this.props.onEdit(recipeName, indegredients, instructions);
+        } else {
+            this.props.onCreate(recipeName, indegredients, instructions);
+            this.resetForm();
+            this.setState({
+                createdRecipe : true
+            });
+            this.refs.recipeName.focus();
+        }
     }
 
     resetForm() {
@@ -56,6 +78,7 @@ class CreateForm extends React.Component {
             instructions,
             createdRecipe
         } = this.state;
+        const { recipe } = this.props;
         return(
             <div className="col-sm-8">
                 <form onSubmit={this.onHandleSubmit}>
@@ -97,24 +120,24 @@ class CreateForm extends React.Component {
                             onChange={this.inputHandleChange}
                         ></textarea>
                     </div>
-                    <button 
-                        type="submit" 
-                        className="btn btn-primary btn-block"
-                    >
-                        Create
-                    </button>
+                    <Button 
+                        text={recipe ? 'Edit' : 'Create'} 
+                        className="primary"
+                        buttonstyle="inline"
+                        onButtonClick={this.onHandleSubmit}
+                    />
                 </form>
             </div>
         );
     }
 }
 
-CreateForm.defaultProps = {
-    onSubmit: ()=> {}
+CreateEditForm.defaultProps = {
+    onCreate: ()=> {}
 };
 
-CreateForm.proptype = {
-    onSubmit: PropTypes.func
+CreateEditForm.proptype = {
+    onCreate: PropTypes.func
 };
 
-export default CreateForm;
+export default CreateEditForm;

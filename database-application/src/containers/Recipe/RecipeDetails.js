@@ -7,23 +7,34 @@ function RecipeDetails(props) {
             props.onDelete(props.recipe);
         }
     }
+    const { 
+        recipe,
+        onEdit
+    } = props;
     return(
         <div className="col-sm-8">
             {props.recipe ? 
                 <div className="jumbotron">
-                    <h2 className="display-3 mb-3">{ props.recipe.recipeName }</h2>
+                    <h2 className="display-3 mb-3">{ recipe.recipeName }</h2>
 
                     <h2 className="display-5 mb-4">Indegredients</h2>
-                    <p>{props.recipe.indegredients}</p>
+                    <p>{recipe.indegredients}</p>
 
                     <h2 className="display-5 mb-4">Instructions</h2>
-                    <p>{props.recipe.instructions}</p>
+                    <p>{recipe.instructions}</p>
 
                     <Button 
                         text="Delete" 
                         className="danger" 
-                        buttonStyle="inline"
+                        buttonstyle="inline"
                         onButtonClick={confirmDelete}
+                    />
+
+                    <Button 
+                        text="Edit" 
+                        className="danger" 
+                        buttonstyle="inline"
+                        onButtonClick={onEdit}
                     />
 
                 </div> 

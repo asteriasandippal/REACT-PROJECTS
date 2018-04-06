@@ -1,7 +1,8 @@
 import React from 'react';
 import RecipeSideBar from './RecipeSideBar';
 import RecipeDetails from './RecipeDetails';
-import CreateForm from './CreateForm';
+// import CreateForm from './CreateForm';
+import CreateEditForm from './CreateEditForm';
 
 const LOCAL_STORAGE_KEY = 'recipes';
 
@@ -21,12 +22,16 @@ export default class Recipe extends React.Component {
         this.onHandleSelectRecipe = this.onHandleSelectRecipe.bind(this);
         this.handleDeleteRecipe = this.handleDeleteRecipe.bind(this);
         this.handleSearchChange = this.handleSearchChange.bind(this);
+        this.handleEditRecipe = this.handleEditRecipe.bind(this);
+        this.handleRecipeEdited = this.handleRecipeEdited.bind(this);
     }
     onShowCreate() {
-        this.setState({showCreate: !this.state.showCreate});
+        this.setState({
+            showCreate: true,
+            selectedRecipe: null,
+        });
     }
     onHandleCreateRecipe(recipeName, indegredients, instructions) {
-        console.log(recipeName, indegredients, instructions);
         const newRecipe = this.state.recipes.concat({
             id: new Date().getTime(),
             recipeName, 
@@ -35,6 +40,27 @@ export default class Recipe extends React.Component {
         });
         this.updateRecipes(newRecipe);
     }
+
+    handleRecipeEdited(recipeName, indegredients, instructions) {
+
+        const {
+            recipes, 
+            selectedRecipe
+        } = this.state;
+
+        const editRecipe = Object.assign({}, selectedRecipe, {
+            recipeName, 
+            indegredients, 
+            instructions
+        });
+
+        const newRecipe = recipes.map(recipe => 
+            recipe === selectedRecipe ? editRecipe : recipe)
+
+        this.updateRecipes(newRecipe);
+        this.onHandleSelectRecipe(editRecipe);
+    }
+
     onHandleSelectRecipe(recipe) {
         this.setState({
             selectedRecipe: recipe,
@@ -67,9 +93,21 @@ export default class Recipe extends React.Component {
         });
     }
 
+    handleEditRecipe() {
+        this.setState({
+            showCreate: true
+        })
+    }
+
     render() {
-        const filterRecipes = this.state.recipes.filter(
-            recipe => recipe.recipeName.toLowerCase().indexOf(this.state.search.toLowerCase()) > -1);
+        const {
+            recipes, 
+            selectedRecipe, 
+            showCreate, 
+            search
+        } = this.state;
+        const filterRecipes = recipes.filter(
+            recipe => recipe.recipeName.toLowerCase().indexOf(search.toLowerCase()) > -1);
         return(
             <div className="row">
                 <RecipeSideBar 
@@ -78,11 +116,16 @@ export default class Recipe extends React.Component {
                     onSelectedRecipe={this.onHandleSelectRecipe}
                     handleSearchChange={this.handleSearchChange}
                 />
-                {this.state.showCreate ? 
-                    <CreateForm onSubmit={this.onHandleCreateRecipe}/> 
+                {showCreate ? 
+                    <CreateEditForm 
+                        onCreate={this.onHandleCreateRecipe}
+                        onEdit={this.handleRecipeEdited}
+                        recipe={selectedRecipe}
+                    /> 
                     : <RecipeDetails 
-                        recipe={this.state.selectedRecipe} 
+                        recipe={selectedRecipe} 
                         onDelete={this.handleDeleteRecipe}
+                        onEdit={this.handleEditRecipe}
                     />
                 }
             </div>
