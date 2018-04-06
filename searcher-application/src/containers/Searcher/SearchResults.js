@@ -9,7 +9,11 @@ class SearchResults extends React.Component {
             <div className="row">
                 {showPhotos.map(photo =>
                     <GridBlock colume="4" key={photo.id}> 
-                        <Card {...photo}/>
+                        <Card 
+                            image={photo.image_url[0]} 
+                            name={photo.name}
+                            description={photo.description}
+                        />
                     </GridBlock>
                 )}
             </div>
