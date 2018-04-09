@@ -4,531 +4,187 @@ exports[`SearchResults render correctly 1`] = `
 <div
   className="row"
 >
-  <div
-    className="col-sm-4"
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="That hits the spot"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/28818265/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=2&sig=f6098cd7a8e2799c3f328b1ea6cab85389e97b384753aa83a6156e0075a5b0f7"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          That hits the spot
-        </h5>
-        <p
-          className="card-text"
-        >
-          Beans the tabby gets a gentle chin rub during the photo shoot.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description="Beans the tabby gets a gentle chin rub during the photo shoot."
+      image="https://drscdn.500px.org/photo/28818265/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=2&sig=f6098cd7a8e2799c3f328b1ea6cab85389e97b384753aa83a6156e0075a5b0f7"
+      name="That hits the spot"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="Hanging Out"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/54298810/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=62d4de5d33196b2a94c6ffcd0b20d838f2aab6fd12fb747adf5c278fc0bd6693"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          Hanging Out
-        </h5>
-        <p
-          className="card-text"
-        >
-          This little kitten was laying upside down in his playpen, giving himself a bath. Not a bad life.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description="This little kitten was laying upside down in his playpen, giving himself a bath. Not a bad life."
+      image="https://drscdn.500px.org/photo/54298810/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=62d4de5d33196b2a94c6ffcd0b20d838f2aab6fd12fb747adf5c278fc0bd6693"
+      name="Hanging Out"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="Soft Siamese"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/16722085/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=2&sig=ba969a8f54f4eeba3a63c941bca867aa878a100f65bc425aef279c000abe3dab"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          Soft Siamese
-        </h5>
-        <p
-          className="card-text"
-        >
-          A Siamese kitten enjoying the afternoon sun in San Francisco. 
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description="A Siamese kitten enjoying the afternoon sun in San Francisco. "
+      image="https://drscdn.500px.org/photo/16722085/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=2&sig=ba969a8f54f4eeba3a63c941bca867aa878a100f65bc425aef279c000abe3dab"
+      name="Soft Siamese"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="Oh hi there"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/204997195/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=1d6340cf847634af10e9cf9c3c294efb88d0ac093ce3e8ec83e8a4ceab58be48"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          Oh hi there
-        </h5>
-        <p
-          className="card-text"
-        >
-          Astro was lounging on the couch when suddenly, a photographer appeared :)
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description="Astro was lounging on the couch when suddenly, a photographer appeared :)"
+      image="https://drscdn.500px.org/photo/204997195/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=1d6340cf847634af10e9cf9c3c294efb88d0ac093ce3e8ec83e8a4ceab58be48"
+      name="Oh hi there"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="oh fuck it's monday tomorrow!"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/113383393/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=2&sig=28162f5f656fac6cd84961cdd41b4c13047ab112958301419a37db6dab0e5f9c"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          oh fuck it's monday tomorrow!
-        </h5>
-        <p
-          className="card-text"
-        >
-          http://kevin-v.com
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description="http://kevin-v.com"
+      image="https://drscdn.500px.org/photo/113383393/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=2&sig=28162f5f656fac6cd84961cdd41b4c13047ab112958301419a37db6dab0e5f9c"
+      name="oh fuck it's monday tomorrow!"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="\\"Farewell Ahimsa\\""
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/72946285/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=5301af9d202a3d98fd82692b52014d9512b35d8139c5c70976a711889bc5b09c"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          "Farewell Ahimsa"
-        </h5>
-        <p
-          className="card-text"
-        >
-          Ahimsa was launched on Thursday at the Zoo in Munich, where she should live together with another tiger. "Ahimsa Goodbye" and thank you for modeling.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description="Ahimsa was launched on Thursday at the Zoo in Munich, where she should live together with another tiger. \\"Ahimsa Goodbye\\" and thank you for modeling."
+      image="https://drscdn.500px.org/photo/72946285/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=5301af9d202a3d98fd82692b52014d9512b35d8139c5c70976a711889bc5b09c"
+      name="\\"Farewell Ahimsa\\""
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="Shy Little One"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/59101464/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=230734317f3dff7c18a9fcb4d91b6b11f44eed0ae6cf99bed77434afcb76e8c7"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          Shy Little One
-        </h5>
-        <p
-          className="card-text"
-        >
-          This little tabby kitten was just pulled out of a shelter, and is a bit shy and timid. He let me pick him up and give him some cheek rubs though, and he was purring up a storm the whole time.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description="This little tabby kitten was just pulled out of a shelter, and is a bit shy and timid. He let me pick him up and give him some cheek rubs though, and he was purring up a storm the whole time."
+      image="https://drscdn.500px.org/photo/59101464/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=230734317f3dff7c18a9fcb4d91b6b11f44eed0ae6cf99bed77434afcb76e8c7"
+      name="Shy Little One"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="\\"Get, That, Stupid Camera, Outta My Face.\\""
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/111277863/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=2&sig=77330fd3de716fd5c92a32e33e3e49d394d3115e1a3f5e0c0ed56600220f5d87"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          "Get, That, Stupid Camera, Outta My Face."
-        </h5>
-        <p
-          className="card-text"
-        >
-          Annoyed Cat
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description="Annoyed Cat"
+      image="https://drscdn.500px.org/photo/111277863/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=2&sig=77330fd3de716fd5c92a32e33e3e49d394d3115e1a3f5e0c0ed56600220f5d87"
+      name="\\"Get, That, Stupid Camera, Outta My Face.\\""
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="Siamese"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/59808318/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=8a56961fad54beb3f9dbb52d7ef6fcd1e3d67c098c48eecb5f02ec3ae8b37686"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          Siamese
-        </h5>
-        <p
-          className="card-text"
-        >
-          Benedict the Siamese cat, maybe even a purebred, thrown out of a car and into the loving arms of Saving Grace Rescue.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description="Benedict the Siamese cat, maybe even a purebred, thrown out of a car and into the loving arms of Saving Grace Rescue."
+      image="https://drscdn.500px.org/photo/59808318/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=8a56961fad54beb3f9dbb52d7ef6fcd1e3d67c098c48eecb5f02ec3ae8b37686"
+      name="Siamese"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="eye of the tiger"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/112268887/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=2&sig=ab9adb0adb60524fc6bc06c24ee77aa558c31521b0afefc1ae5ca63bf9910ebc"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          eye of the tiger
-        </h5>
-        
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description={null}
+      image="https://drscdn.500px.org/photo/112268887/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=2&sig=ab9adb0adb60524fc6bc06c24ee77aa558c31521b0afefc1ae5ca63bf9910ebc"
+      name="eye of the tiger"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="\\"carefully entering the water\\""
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/79759257/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=909dbb33a2fda3663e5d227f283513d850df1291a70be994f0ea202832e42899"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          "carefully entering the water"
-        </h5>
-        
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description={null}
+      image="https://drscdn.500px.org/photo/79759257/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=909dbb33a2fda3663e5d227f283513d850df1291a70be994f0ea202832e42899"
+      name="\\"carefully entering the water\\""
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="Got Milk?"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/26876155/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=2&sig=4c9e3493690c06703e80e7f7ce765df4ee1cc8bd8d7ac592851aa78e9555cc4e"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          Got Milk?
-        </h5>
-        <p
-          className="card-text"
-        >
-          This little tabby kitten had just finished lunch; probably not the best time for a photo shoot :D
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description="This little tabby kitten had just finished lunch; probably not the best time for a photo shoot :D"
+      image="https://drscdn.500px.org/photo/26876155/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=2&sig=4c9e3493690c06703e80e7f7ce765df4ee1cc8bd8d7ac592851aa78e9555cc4e"
+      name="Got Milk?"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="Stare - Jaguar (Pardus onca)"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/114080513/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=6&sig=2c881b988eca297227cd2ca309fe5407d708adb90ef37e4e2654317f4d6cbc8c"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          Stare - Jaguar (Pardus onca)
-        </h5>
-        <p
-          className="card-text"
-        >
-          A particularly captivating shot of a mature male Jaguar through broken light from above. With the foreground taking up quite so much of the frame, the intensity of the stare is even more defined. The dark backdrop contrasts hugely with the fierce pride of the cat and his penetrating stare.
+    <Card
+      description="A particularly captivating shot of a mature male Jaguar through broken light from above. With the foreground taking up quite so much of the frame, the intensity of the stare is even more defined. The dark backdrop contrasts hugely with the fierce pride of the cat and his penetrating stare.
 
-www.lightorflight.com
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+www.lightorflight.com"
+      image="https://drscdn.500px.org/photo/114080513/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=6&sig=2c881b988eca297227cd2ca309fe5407d708adb90ef37e4e2654317f4d6cbc8c"
+      name="Stare - Jaguar (Pardus onca)"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="Internet made for cats"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/96980771/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=9&sig=df7c022d2401cae250a5812b6e1e2725b9754748ff46bd77e1b34f0d156ebedd"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          Internet made for cats
-        </h5>
-        
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description=""
+      image="https://drscdn.500px.org/photo/96980771/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=9&sig=df7c022d2401cae250a5812b6e1e2725b9754748ff46bd77e1b34f0d156ebedd"
+      name="Internet made for cats"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="Sublimity"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/72967163/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=928c0aa9027368a5cddcdf4b08adb4b59e8b1a2013ded0dfabd08ccadf88855e"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          Sublimity
-        </h5>
-        <p
-          className="card-text"
-        >
-          Erhabenheit.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description="Erhabenheit."
+      image="https://drscdn.500px.org/photo/72967163/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=928c0aa9027368a5cddcdf4b08adb4b59e8b1a2013ded0dfabd08ccadf88855e"
+      name="Sublimity"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="Tiger"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/91282777/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=6&sig=4ee5ed0caf7d735ff92526be2d456c76ddebbf1c178e3c45474aaef5a5453a13"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          Tiger
-        </h5>
-        <p
-          className="card-text"
-        >
-          My lovely cat
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description="My lovely cat"
+      image="https://drscdn.500px.org/photo/91282777/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=6&sig=4ee5ed0caf7d735ff92526be2d456c76ddebbf1c178e3c45474aaef5a5453a13"
+      name="Tiger"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="Proud"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/73818641/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=ecd3cfd581221a3bfadbd81ff9c4bb978b9bd143382553581b200e2c77f399bb"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          Proud
-        </h5>
-        
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description={null}
+      image="https://drscdn.500px.org/photo/73818641/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=ecd3cfd581221a3bfadbd81ff9c4bb978b9bd143382553581b200e2c77f399bb"
+      name="Proud"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="Katzenkinder"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/20052621/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=2&sig=14b57705dc48f78a05e5e81d51a246b9767be1201103b764e9248443e3820f8b"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          Katzenkinder
-        </h5>
-        <p
-          className="card-text"
-        >
-          5 Wochen alte Katzenkinder auf einer Wiese
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description="5 Wochen alte Katzenkinder auf einer Wiese"
+      image="https://drscdn.500px.org/photo/20052621/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=2&sig=14b57705dc48f78a05e5e81d51a246b9767be1201103b764e9248443e3820f8b"
+      name="Katzenkinder"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="A Curious Kitten"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/74242807/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=b9f39151edfd4c38f9be1668f21875dc325477de20018de4c5a0633ab92d82f1"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          A Curious Kitten
-        </h5>
-        <p
-          className="card-text"
-        >
-          My good friend recently got a new kitten and wanted some photos. Needless to say, he was a cute and curious little one.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="col-sm-4"
+    <Card
+      description="My good friend recently got a new kitten and wanted some photos. Needless to say, he was a cute and curious little one."
+      image="https://drscdn.500px.org/photo/74242807/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=0&sig=b9f39151edfd4c38f9be1668f21875dc325477de20018de4c5a0633ab92d82f1"
+      name="A Curious Kitten"
+    />
+  </GridBlock>
+  <GridBlock
+    colume="4"
   >
-    <div
-      className="card"
-    >
-      <img
-        alt="Cat"
-        className="card-img-top"
-        src="https://drscdn.500px.org/photo/85112435/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=5&sig=faeb2bdf863b9b0c2061ffb7c820ff5747d82ec7fa6264c607fa0fbc98ac289b"
-      />
-      <div
-        className="card-body"
-      >
-        <h5
-          className="card-title"
-        >
-          Cat
-        </h5>
-        <p
-          className="card-text"
-        >
-          Cat
-        </p>
-      </div>
-    </div>
-  </div>
+    <Card
+      description="Cat"
+      image="https://drscdn.500px.org/photo/85112435/w%3D280_h%3D280/v2?client_application_id=47825&user_id=26140351&webp=true&v=5&sig=faeb2bdf863b9b0c2061ffb7c820ff5747d82ec7fa6264c607fa0fbc98ac289b"
+      name="Cat"
+    />
+  </GridBlock>
 </div>
 `;

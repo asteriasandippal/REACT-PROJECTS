@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Form render correctly 1`] = `
+<div>
+  <form
+    className="pt-4 pb-4"
+    onSubmit={[Function]}
+  >
+    <div
+      className="input-group mb-3"
+    >
+      <input
+        aria-label="Search phots..."
+        className="form-control form-control-lg"
+        onChange={[Function]}
+        placeholder="Search phots..."
+        type="text"
+      />
+      <div
+        className="input-group-append"
+      >
+        <button
+          className="btn btn-primary btn-lg"
+          onClick={[Function]}
+          type="button"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+`;

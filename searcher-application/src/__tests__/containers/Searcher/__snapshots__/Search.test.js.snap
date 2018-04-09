@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Searches correctly 1`] = `
+<div>
+  <SearchForm
+    onSearch={[Function]}
+  />
+  <SearchResults
+    showPhotos={Array []}
+  />
+</div>
+`;
+
+exports[`Search render correctly 1`] = `
+<div>
+  <SearchForm
+    onSearch={[Function]}
+  />
+  <SearchResults
+    showPhotos={Array []}
+  />
+</div>
+`;
